@@ -7,7 +7,7 @@ class TelegramBot
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
         response = message_handler.handle_message(message)
-        msg_text = { chat_id: message.chat.id, text: response }
+        msg_text = { chat_id: message.chat.id, text: response, parse_mode: 'Markdown' }
         bot.api.send_message(msg_text)
       end
     end

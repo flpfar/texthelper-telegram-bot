@@ -1,6 +1,5 @@
 module MessageHelper
   COMMAND_WITH_ARG_LIST = {
-    '/start' => proc { WELCOME_MESSAGE },
     '/upcase' => proc { |text| text.upcase },
     '/downcase' => proc { |text| text.downcase },
     '/capitalize' => proc { |text| text.capitalize },

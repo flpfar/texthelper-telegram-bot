@@ -2,10 +2,10 @@
 
 > This is a telegram bot that manipulates text according to the command provided. Created to practice Ruby.
 
-![Pic](/images/texthelperbot.png)
+![Pic](/images/template.png)
 
-This Telegram Bot, hosted on Heroku, accepts a command with a text to receive an action. The commands implemented are: /start,
-/commands, /upcase, /downcase, /capitalize, /capitalizeall, /countchars, /countonlychars, /countwords
+This Telegram Bot, hosted on Heroku, accepts a command with a text to receive an action. The commands implemented are: /start /commands /upcase /downcase /capitalize /capitalizeall /countchars /countonlychars /countwords
+It can be used either inside a chat with TextHelperBot or through inline commands, within a group chat.
 
 ## Built With
 
@@ -32,7 +32,7 @@ This Telegram Bot, hosted on Heroku, accepts a command with a text to receive an
 
 ### User Interface
 - Search for TextHelperBot inside telegram or [access here](https://t.me/texthelperbot)
-- When interacting with the bot, the start command will show:
+- When interacting with the bot, `/start` shows the commands available. Just type the desired command with some text and receive a message with the result.
 
    ```
     Welcome to TextHelper!
@@ -50,6 +50,8 @@ This Telegram Bot, hosted on Heroku, accepts a command with a text to receive an
     '/countonlychars some text' returns '8' (not counting whitespaces)
     '/countwords some text' returns '2'
    ``` 
+
+- When in a group chat, add the bot and use inline commands. Type: `@TextHelperBot sample text` and click in one of the options available.
 
 ## 👤 Author 
 
